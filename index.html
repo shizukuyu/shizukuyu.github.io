@@ -1,234 +1,98 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6C8XK3Y81"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K6C8XK3Y81"></script>
 
-    gtag('config', 'G-K6C8XK3Y81');
-  </script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"-->
 
-  <title>Suwen Jin — HelloWorldDeveloper</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="photos/logo.png">
-  <link rel="stylesheet" href="unistyles.css">
-  <link rel="stylesheet" href="styles.css">
+<title>Suwen Jin's Homepage</title>
+<link rel="shortcut icon" href="images/logo.png"/>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 
-  <meta name="keywords" content="developer, fullstack, frontend, backend, Android,iOS, Hybrid,website, portfolio">
-  <meta name="author" content="Suwen Jin">
-  <meta name="description" content="Portfolio of Suwen Jin. A mobile/web developer.">
-  <meta name="theme-color" content="#3ddc84">
-  <meta itemprop="name" content="Suwen Jin | Mobile Developer | Design and Development">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <script type="text/javascript">
-    if (screen.width <= 699) {
-      document.location = "mobile.html";
-    }
-  </script>
-  <script language=javascript>
-    if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-      location.replace("mobile.html");
-    }
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/unistyles.css">
+<link rel="stylesheet" href="css/first-css.css">
 
-    function copyToClipboard(element) {
-      navigator.clipboard.writeText('suwen.jin@ucdconnect.ie')
-        .then(() => {
-          document.getElementById(element).innerHTML = 'email copied!';
-          setTimeout(function () {
-            document.getElementById(element).innerHTML = 'Get in touch';
-          }, 5000);
-        })
-        .catch(() => {
-          alert("something went wrong");
-        });
-    }
-  </script>
-  <style>
-    [data-scroll-content] {
-      padding-top: 9vw;
-      padding-bottom: 5.5vw;
-    }
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-    .bnr {
-      position: relative;
-      background: #d7effe;
-      width: 100;
-    }
+<style>
+     a:hover{color:#8c0e08;}
+     .page-header{
+          padding-bottom: 9px;
+          margin: 40px 0 20px;
+          border-bottom: 1px solid #eeeeee;
+          left: 10px;
+     }
+     .picleft{
+          width: 40%;
+          float: left;
+     }
+     .introright{
+          width: 55%;
+          float: right;
+     }
+     .clearf{
+          clear: both;
+     }
+     .div-bottom{
+          margin-top: 45px;
+           }
+     .s4{
+          color: #282a2bd6;
+          font-family:"Microsoft YaHei",sans-serif;
+          font-style: italic;
+          font-weight: normal;
+          text-decoration: none;
+          font-size: 11pt;
+     }
+     .s4:hover{
+          color:#238e70d6;
+     }
+     .s5{
+          font-style: italic;
+          text-decoration: none;
+          font-size: 11pt;
+     }
+     .s5:hover{
+          color:#238e70d6;
+     }
 
-    .tb {
-      width: 180vw;
-      font-size: 7.613vw;
-      text-transform: uppercase;
-    }
+</style>
 
-    .sright {
-      margin-left: -2vw;
-      position: relative;
-      z-index: 5;
-    }
-
-    .bl {
-      transform: translate(0, -5.8vh);
-    }
-
-    .bi {
-      width: 49vw;
-      height: auto;
-    }
-
-    .ba {
-      position: absolute;
-      bottom: 28vh;
-      right: 14vh;
-      width: 70px;
-    }
-
-    .ba img {
-      width: 100%;
-    }
-
-    .bt {
-      padding-left: 10vw;
-      transform: translate(0, 70%);
-    }
-
-    .sw {
-      margin-top: 20vw;
-    }
-
-    .sw,
-    .con {
-      margin: 18vw auto 20vh auto;
-    }
-
-    .swdes span>span {
-      text-align: right;
-      transition-delay: .9s;
-      font-size: 15px;
-    }
-
-    .scol {
-      padding: 20vh 8vw 5vh 8vw;
-    }
-
-    .sbot {
-      margin-top: -20vh;
-    }
-
-    .w-margin {
-      margin: 0 0 28vh 0;
-    }
-
-    .w p {
-      font-size: 1.02em;
-      font-family: product;
-      padding: 15px 0 2px 0;
-    }
-
-    .w>span {
-      font-size: 12px;
-      font-family: quest;
-      opacity: .5;
-      color: #000000;
-    }
-
-    .w>a>div img {
-      filter: grayscale(1);
-      transition: .4s;
-    }
-
-    .w>a>div img:hover {
-      filter: grayscale(0);
-    }
-
-    .con {
-      position: relative;
-      margin-bottom: 0;
-    }
-
-    .con * {
-      transition-delay: .6s;
-      transition-property: transform;
-    }
-
-    .cs {
-      width: 52.33%;
-      margin-left: 25.3%;
-      align-items: center;
-    }
-
-    .social a {
-      font-family: product, sans-serif;
-      font-size: 1.066em;
-      line-height: 1.154em;
-      display: block;
-      padding: 1px 0;
-      transition: .2s;
-    }
-
-    .ctext {
-      transform: translate(0, 1.8vh);
-    }
-
-    .ctext p {
-      white-space: nowrap;
-    }
-
-    .ctext>a {
-      font-family: product;
-      text-decoration: underline;
-      transform: translate(0, 10vh);
-      display: block;
-      font-size: 25px;
-    }
-
-    .social p {
-      font-size: 16px;
-      opacity: .5;
-    }
-
-    .c-small {
-      font-size: 12px;
-      font-family: product;
-      transform: translate(0, 25vh);
-      color: #000000;
-      opacity: .5;
-    }
-
-    .cs .imgrev {
-      width: 30vw;
-      margin-left: -25vw;
-      margin-top: -4.5vh;
-    }
-  </style>
 </head>
-
 <body>
-  <div class="scr">
-    <h1>
-      PLEASE RESIZE YOUR<br>BROWSER
-    </h1>
-    <p>If this is your tablet or other device<br>then please visit mobile version.</p>
-    <a href="mobile.html">Mobile Version</a>
-  </div>
-  </div>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+
+<!-- NAV SECTION -->
 
   <nav class="flex col-12">
     <div>
       <span class="flex">
-        <hr data-emergence="hidden" style="width: 4vw;">
+        <hr data-emergence="visible" style="width: 4vw;">
         SUWEN JIN
       </span>
     </div>
     <div>
       <span class="flex">
-        <a href="projects/">PROJECTS</a>
+        <a href="SuwenJin_2023.pdf">RESUME</a>
       </span>
     </div>
     <div id="mbtn" class="mbtn-visible" onclick="shonav();">
@@ -237,6 +101,8 @@
     </div>
   </nav>
 
+
+<!-- MENU BOTH SIDES -->
   <div id="nl" class="nav_left">
     <h5 class="flex">
       SUWEN JIN
@@ -245,7 +111,9 @@
   <div id="mbtn_side" onclick="shonav();">
     <h5>MENU</h5>
   </div>
-  <!--MAIN-->
+
+
+<!--MAIN-->
   <div id="mnu" class="mnu-hid">
     <div id="cbtn" class="cbtn-hidden" onclick="hidnav();">
       <hr style="transform: rotate(-45deg) translate(-1px, 1px);">
@@ -263,7 +131,7 @@
         <hr class="js-hide" data-emergence="hidden" style="width: 25vw;margin-left:0">
         <span class="row">
           <span class="js-hide" data-emergence="hidden">
-            <a href="projects/">PROJECTS</a>
+            <a href="SuwenJin_2023.pdf">RESUME</a>
           </span>
         </span>
       </h1>
@@ -273,7 +141,7 @@
         <div class="flex">
           <span class="row">
             <span class="js-hide" data-emergence="hidden">
-              <a id="change-text2" onclick="copyToClipboard('change-text2')" href="#" class="flex">Get in touch</a>
+               <span data-emergence="hidden"><a href="mailto:suwen.jin@ucdconnect.ie" data-toggle="tooltip" title="Email me!"> suwen.jin@ucdconnect.ie</a> <br/></span>
             </span>
           </span>
         </div>
@@ -292,266 +160,133 @@
       </div>
     </div>
   </div>
-  <!--SCROLL-CTN-->
-  <div data-scroll>
-    <div data-scroll-content>
-      <!--BANNER-->
+
+
+
+     <!-- BANNER -->
       <div class="bnr col-12">
         <div style="overflow-x:hidden;width: 100%">
           <h1 class="tb sleft">
             <span class="row">
-              <span data-emergence="hidden">Frontend</span>
+              <span data-emergence="hidden">Computer</span>
             </span>
             <hr data-emergence="hidden" style="width: 18vw;">
             <span class="row">
-              <span data-emergence="hidden">Backend</span>
+              <span data-emergence="hidden">Science</span>
             </span>
-          </h1>
-          <h1 class="tb sright">
-            <span class="row">
-              <span data-emergence="hidden">Web</span>
-            </span>
-            <hr data-emergence="hidden" style="width: 24vw;">
-            <span class="row">
-              <span data-emergence="hidden">Mobile</span>
-            </span>
-          </h1>
+          </h1 >
           <h1 class="tb sleft">
             <span class="row">
-              <span data-emergence="hidden">Android</span>
+              <span data-emergence="hidden">Environmental</span>
             </span>
             <hr data-emergence="hidden" style="width: 10vw;">
             <span class="row">
-              <span data-emergence="hidden">iOS</span>
+              <span data-emergence="hidden">Sci</span>
             </span>
             <hr data-emergence="hidden" style="width: 10vw;">
-            <span class="row">
-              <span data-emergence="hidden">Hybrid</span>
-            </span>
+
           </h1>
           <h1 class="tb sright">
             <span class="row">
-              <span data-emergence="hidden">User</span>
+              <span data-emergence="hidden">engineering</span>
             </span>
             <hr data-emergence="hidden" style="width: 24vw;">
             <span class="row">
-              <span data-emergence="hidden">INterfaces</span>
+              <span data-emergence="hidden"></span>
             </span>
           </h1>
+          <!-- <h1 class="tb sright">
+            <span class="row">
+              <span data-emergence="hidden">master</span>
+            </span>
+            <hr data-emergence="hidden" style="width: 24vw;">
+            <span class="row">
+              <span data-emergence="hidden">student</span>
+            </span>
+          </h1> -->
         </div>
+        
         <div class="bl ali flex">
           <div class="bi imgrev" data-emergence="hidden">
-            <img src="photos/bg.png">
+            <img src="images/bg.png">
           </div>
           <div class="bt">
             <p>
               <span class="row">
-                <span data-emergence="hidden">Hello! I'm Suwen,</span>
+                <span data-emergence="hidden">Hello!</span>
               </span>
               <span class="row">
-                <span data-emergence="hidden">a developer based in Dublin</span>
+                <span data-emergence="hidden">I'm now a master student in Computer Science</span>
+              </span>
+              <span class="row">
+                <span data-emergence="hidden">at University College Dublin, Ireland.</span>
               </span>
               <br>
               <br>
               <span class="row">
-                <span data-emergence="hidden">I am a passionate student of Computer Science who</span>
+                <span data-emergence="hidden">I have a profound love for exploring the world from diverse perspectives</span>
               </span>
               <span class="row">
-                <span data-emergence="hidden">loves to explore the world and human computer interaction</span>
-              </span>
-              <span class="row">
-                <span data-emergence="hidden">also known as a life observer.</span>
+                <span data-emergence="hidden">and a deep passion for interdisciplinary learning and research.</span>
               </span>
               <br>
             </p>
           </div>
           <div class="ba imgrev" data-emergence="hidden">
-            <img src="photos/arrow.svg">
-          </div>
-        </div>
-      </div>
-      <!--WORK-->
-      <div class="sw col-10">
-        <div>
-          <h1 class="jus">
-            <span class="row">
-              <span style="transition-delay: .2s" data-emergence="hidden">SELECTED</span>
-            </span>
-            <hr style="width: 31%;" style="transition-delay: .3s" data-emergence="hidden">
-            <span class="row">
-              <span style="transition-delay: .4s" data-emergence="hidden">WORK</span>
-            </span>
-          </h1>
-          <p class="swdes">
-            <span class="row">
-              <span data-emergence="hidden">
-                These are some of my personal
-              </span>
-            </span>
-            <span class="row">
-              <span data-emergence="hidden">
-                favourite projects.
-              </span>
-            </span>
-          </p>
-        </div>
-        <div class="flex">
-          <div class="scol col-6">
-            <div class="w w-margin">
-              <a href="./projects/nikecore.html">
-                <div class="imgrev" data-emergence="hidden">
-                  <img src="photos/nikecore.png">
-                </div>
-              </a>
-              <p>
-                <span class="row">
-                  <span data-emergence="hidden">
-                    NikeCore
-                  </span>
-                </span>
-              </p>
-              <span class="row">
-                <span data-emergence="hidden">
-                  App - made with Kotlin
-                </span>
-              </span>
-            </div>
-            <div class="w">
-              <a href="./projects/crud-api.html">
-                <div class="imgrev" data-emergence="hidden">
-                  <img src="photos/crud-api.png">
-                </div>
-              </a>
-              <p>
-                <span class="row">
-                  <span data-emergence="hidden">
-                    CRUD API
-                  </span>
-                </span>
-              </p>
-              <span class="row">
-                <span data-emergence="hidden">
-                  Api - made with Pyhton, SQLAlchemy, Alembic
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="sbot scol col-6">
-            <div class="w w-margin">
-              <a href="./projects/nokiagarage.html">
-                <div class="imgrev" data-emergence="hidden">
-                  <img src="photos/nokiagarage.png">
-                </div>
-              </a>
-              <p>
-                <span class="row">
-                  <span data-emergence="hidden">
-                    NokiaGarage
-                  </span>
-                </span>
-              </p>
-              <span class="row">
-                <span data-emergence="hidden">
-                  App - made with Kotlin
-                </span>
-              </span>
-            </div>
-            <div class="w">
-              <a href="./projects/surface.html">
-                <div class="imgrev" data-emergence="hidden">
-                  <img src="photos/surface2.jpg">
-                </div>
-              </a>
-              <p>
-                <span class="row">
-                  <span data-emergence="hidden">
-                    Surface
-                  </span>
-                </span>
-              </p>
-              <span class="row">
-                <span data-emergence="hidden">
-                  Website - made with Node.js, Express.js, Aws, Javascript, Html, CSS and MariaDB
-                </span>
-              </span>
-            </div>
-
+            <img src="images/arrow.svg">
           </div>
         </div>
       </div>
 
 
-      <div class="abt col-10">
-        <h1 class="jus">
-          <span class="row">
-            <span data-emergence="hidden">ABOUT</span>
-          </span>
-          <hr style="width: 58%;" data-emergence="hidden">
-          <span class="row">
-            <span data-emergence="hidden">ME</span>
-          </span>
-        </h1>
+
+      <!-- ABOUT ME -->
+
+      
+      <div class="abt col-10 pb-4">
         <div class="jus flex ali intro">
           <div>
             <p>
               <span class="row">
                 <span data-emergence="hidden">
-                  Currently
+                    In my undergraduate, my major is Environmental Science and Engineering
+                </span>
+                <br>
+                <span data-emergence="hidden">
+                   Some projects related to water treatment:
                 </span>
               </span>
-              <span class="row">
+              <br>
+              <div class="imgrev" data-emergence="hidden" >
+                    <img style="width: 60%;" src="images/text.svg">
+               </div>
+               <br>
+               <!-- <p>
+               <span class="row">
                 <span data-emergence="hidden">
-                  a CS Master student @ UCDublin
+                  Other than a CS student
                 </span>
               </span>
               <span class="row" style="font-size: 25px; font-family: pbold;">
                 <span data-emergence="hidden">
-                  If you want to know more about me
+                  Also: my photograpy by
                   <a style="font-size: 25px; font-family: pbold; text-decoration: underline;"
-                    href="blog/">PERSONAL BLOG</a>
+                    href="photo/"> FILM 🎞️</a>
                 </span>
               </span>
-              <br>
-              <!--             <span class="row">
-              <span data-emergence="hidden">
-                 and also working as a
-              </span>
-            </span>
-            <span class="row" style="font-size: 25px; font-family: pbold;">
-              <span data-emergence="hidden">
-                Traineer at  
-                 <a style="font-size: 25px; font-family: pbold; text-decoration: underline;" href="https://futurice.com/">Futurice</a>
-              </span>
-            </span> -->
+               </p> -->
             </p>
           </div>
-          <div>
-            <p>
-              <span class="row">
-                <span data-emergence="hidden">I am a 23 y/o developer completing</span>
-              </span>
-              <span class="row">
-                <span data-emergence="hidden">my Bachelor with a major totally different</span>
-              </span>
-              <span class="row">
-                <span data-emergence="hidden">in Environmental Science and Engineering</span>
-              </span>
-              <br>
-              <!-- <a style="font-size: large; text-decoration: underline;" href="https://youtu.be/c_UASn7LC3M"
-                target="_blank">
-                <span class="row">Checkout my interview while working</span>
-                <span class="row">as a Trainee at Metropolia UAS</span>
-              </a> -->
-            </p>
-
-          </div>
+          
         </div>
-        <div class="imgrev" data-emergence="hidden">
-          <img style="width: 60%;" src="photos/text.svg">
-        </div>
+        
 
       </div>
 
+
+
+
+<!-- Footer Section -->
 
 
       <!--CONTACT-->
@@ -560,40 +295,18 @@
           <div class="col-10">
             <h1 class="flex">
               <span class="row">
-                <span data-emergence="hidden">CONT</span>
+                <span data-emergence="hidden">CONTACT</span>
               </span>
-              <hr data-emergence="hidden" style="width: 67%;">
-            </h1>
-            <h1>
-              <span class="row">
-                <span data-emergence="hidden">ACT</span>
-              </span>
+              <hr data-emergence="hidden" style="width: 40%;">
             </h1>
           </div>
           <div class="ctext col-2">
-            <p>
-              <span class="row">
-                <span data-emergence="hidden">Have a project in mind or</span>
-              </span>
-              <span class="row">
-                <span data-emergence="hidden">do you want to work</span>
-              </span>
-              <span class="row">
-                <span data-emergence="hidden">with me?</span>
-              </span>
-              <br>
-              <span class="row">
-                <span data-emergence="hidden">Feel free to reach out</span>
-              </span>
-              <span class="row">
-                <span data-emergence="hidden">by writing an e-mail.</span>
-              </span>
-            </p>
-            <a id="change-text" onclick="copyToClipboard('change-text')" class="ce">Get in touch</a>
             <span class="c-small row">
               <span data-emergence="hidden">Made with ❤️ by<br> Suwen Jin.</span>
+              <span data-emergence="hidden"><a href="mailto:suwen.jin@ucdconnect.ie" data-toggle="tooltip" title="Email me!"> suwen.jin@ucdconnect.ie</a> <br/></span>
             </span>
           </div>
+
         </div>
         <div class="flex jus cs">
           <div class="social">
@@ -614,21 +327,26 @@
             </a>
           </div>
           <div class="imgrev" data-emergence="hidden">
-            <img src="photos/cont2.gif">
+            <img src="images/cont2.gif">
           </div>
         </div>
       </div>
-      <!--SCROLL-END-->
-    </div>
-  </div>
-  <!--SCRIPTS-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script src="js/skew.js"></script>
-  <script src="js/paroller.js"></script>
-  <script src="js/emergence.js"></script>
-  <script src="js/menu.js"></script>
-  <script>
+
+
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+ <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<script src="js/skew.js"></script>
+<script src="js/paroller.js"></script>
+<script src="js/emergence.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+ <script>
     emergence.init({
       container: window,
       reset: false,
@@ -650,7 +368,8 @@
       }
     });
   </script>
-  <script>
+
+<script>
     $(document).ready(function () {
       $('[data-paroller-factor]').paroller();
       //FIRST HEADING
@@ -678,10 +397,6 @@
       });
     });
   </script>
-  <noscript>
-    Congrats, You are probably living in the 90s. Now in order to access this site you either need to
-    update your browser or enable Javascript from settings. And please don't use Internet explorer.
-  </noscript>
-</body>
 
+</body>
 </html>

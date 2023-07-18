@@ -1,10 +1,12 @@
-var mnu = document.getElementById('mnu'),
-    closebtn = document.getElementById('cbtn'),
-    menubtn = document.getElementById('mbtn'),
-    hide = document.getElementsByClassName('js-hide');
+var mnu = document.getElementById('mnu');
+var closebtn = document.getElementById('cbtn');
+var menubtn = document.getElementById('mbtn');
+var hide = document.getElementsByClassName('js-hide');
+
+
 
 function hidnav(){
-  closebtn.setAttribute("class", 'cbtn-hidden');
+  // closebtn.setAttribute("class", 'cbtn-hidden');
   for(i=0; i<hide.length; ++i){
     hide[i].setAttribute('data-emergence', 'hidden');
   }
