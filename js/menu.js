@@ -8,9 +8,9 @@ function hidnav(){
   for(i=0; i<hide.length; ++i){
     hide[i].setAttribute('data-emergence', 'hidden');
   }
-  setTimeout(function(){mnu.setAttribute("class", 'mnu-hid')}, 600);
-  setTimeout(function(){mnu.style="display: none; top: -200%"}, 1000);
-  setTimeout(function(){menubtn.setAttribute("class", 'mbtn-visible')}, 1050);
+  setTimeout(function(){mnu.setAttribute("class", 'mnu-hid')}, 300);
+  setTimeout(function(){mnu.style="display: none; top: -200%"}, 600);
+  setTimeout(function(){menubtn.setAttribute("class", 'mbtn-visible')}, 650);
 }
 
 function shonav(){
@@ -20,7 +20,7 @@ function shonav(){
   setTimeout(function(){for(i=0; i<hide.length; ++i){
     hide[i].setAttribute('data-emergence', 'visible');
   }}, 500);
-  setTimeout(function(){closebtn.setAttribute("class", 'cbtn-visible')}, 800);
+  setTimeout(function(){closebtn.setAttribute("class", 'cbtn-visible')}, 600);
 }
 
 var sbtn = document.getElementById('mbtn_side'),
