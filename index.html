@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4PQXH494M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y4PQXH494M');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4PQXH494M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-Y4PQXH494M');
+  </script>
 
   <title>Suwen Jin</title>
   <meta charset="utf-8">
@@ -436,7 +434,7 @@
         </p>
 
         <div class="imgrev" data-emergence="hidden">
-          <img style="width: 60%;" src="photos/cs.svg">
+          <img style="width: 60%;" loading="lazy" src="photos/cs.svg">
         </div>
         <br>
           <br>
@@ -452,7 +450,7 @@
             The orignal datasets are in the format of NetCDF and they are finally converted to json for the website to render.
             <br>
             <br>
-            <img src="hkust.gif" alt="A GIF image" width="1200" height="650">
+            <img src="hkust.gif" loading="lazy" alt="A GIF image" width="1200" height="650">
 
 
           </span>
@@ -468,7 +466,7 @@
                 <br>
                 <br>
                 <br>
-                <img src="heatmap.gif" alt="A GIF image" width="1200" height="650">
+                <img src="heatmap.gif" loading="lazy" alt="A GIF image" width="1200" height="650">
 
 
               </span>
@@ -538,12 +536,25 @@
     </div>
   </div>
   <!--SCRIPTS-->
-  <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script async src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script async src="js/skew.js"></script>
-  <script async src="js/paroller.js"></script>
-  <script async src="js/emergence.js"></script>
-  <script async src="js/menu.js"></script>
+ <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    // 动态加载非关键脚本
+    window.addEventListener('load', function () {
+      const scripts = [
+        'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js',
+        'js/skew.js',
+        'js/paroller.js',
+        'js/emergence.js',
+        'js/menu.js'
+      ];
+      scripts.forEach(src => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        document.head.appendChild(script);
+      });
+    });
+  </script>
   <script>
     emergence.init({
       container: window,
